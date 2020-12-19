@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{521D5B87-FEEC-4586-92A2-1FEC5B75ED12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MaidService</RootNamespace>
+    <AssemblyName>MaidService</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChreneLib">
+      <HintPath>D:\Software\ChreneLib_dll\ChreneLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccount.Designer.cs">
+      <DependentUpon>AdminAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMaidList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMaidList.Designer.cs">
+      <DependentUpon>AdminMaidList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProfile.Designer.cs">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUserList.Designer.cs">
+      <DependentUpon>AdminUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="ContactUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactUs.Designer.cs">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maid.cs" />
+    <Compile Include="MaidAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaidAccount.Designer.cs">
+      <DependentUpon>MaidAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaidProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaidProfile.Designer.cs">
+      <DependentUpon>MaidProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaidRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaidRegistration.Designer.cs">
+      <DependentUpon>MaidRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Option.Designer.cs">
+      <DependentUpon>Option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccount.Designer.cs">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRequest.Designer.cs">
+      <DependentUpon>UserRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhatWeOffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhatWeOffer.Designer.cs">
+      <DependentUpon>WhatWeOffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhyUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhyUs.Designer.cs">
+      <DependentUpon>WhyUs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAccount.resx">
+      <DependentUpon>AdminAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMaidList.resx">
+      <DependentUpon>AdminMaidList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProfile.resx">
+      <DependentUpon>AdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUserList.resx">
+      <DependentUpon>AdminUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactUs.resx">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaidAccount.resx">
+      <DependentUpon>MaidAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaidProfile.resx">
+      <DependentUpon>MaidProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaidRegistration.resx">
+      <DependentUpon>MaidRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option.resx">
+      <DependentUpon>Option.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserAccount.resx">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRequest.resx">
+      <DependentUpon>UserRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhatWeOffer.resx">
+      <DependentUpon>WhatWeOffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhyUs.resx">
+      <DependentUpon>WhyUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
